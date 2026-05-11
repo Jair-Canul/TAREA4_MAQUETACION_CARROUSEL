@@ -1,0 +1,137 @@
+/* contenedor carrousel */
+#carousel {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 60px;
+}
+/* contenido carrrousel */
+#slide-container {
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 10px;
+  color: #000;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  /* border: 3px black solid; */
+  scrollbar-width: none;
+}
+#slide-container::-webkit-scrollbar{
+    display: none;
+}
+.slide {
+  scroll-snap-align: center;
+  position: relative;
+  min-width: 33%;
+  text-align: center;
+  border: 1px #e5e5e5 solid;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  padding-bottom: 40px;
+}
+.slide figure{
+   width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.slide h1{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+}
+
+.slide p{
+    color: #666;
+    padding: 0px 25px;
+    margin-bottom: 30px;
+}
+
+.slide a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.slide a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 45%;
+    height: 3px;
+    background-color: var(--naranja);
+    transition: all 0.5s ease;
+}
+
+.slide a:hover::after{
+    width: 100%;
+}
+/* contenedor botones */
+.slide-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: absolute;
+  top: 45%;
+  /* border: 1px red solid; */
+  width: 98%;
+  left: 0;
+}
+/* contenedor indicadores */
+.slide-indicators {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.slide-indicator {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.slide-indicator:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 1px var(--naranja) solid;
+  border-radius: 50%;
+}
+.slide-indicator.active:after,
+.slide-indicator:hover:after {
+  width: 30px;
+  border-radius: 20px;
+  background-color: var(--naranja);
+  border-color: var(--naranja);
+}
+/* flechas */
+.arrow {
+  display: none;
+  border: 1px black solid;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+}

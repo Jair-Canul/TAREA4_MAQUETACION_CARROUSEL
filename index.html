@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/carrousel2.css">
+    <link rel="stylesheet" href="css/movil.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> 
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+
+    <title>TAREA 4 CARROUSEL</title>
+</head>
+<body>
+    <a href="#" class="btn_scroll" id="btn-up">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <header class="cabezera">
+        <div class="h_principal ancho margen">
+            <div class="h_info ">
+                <div class="informacion">
+                    <div class="icono_info">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <div class="dato_info">
+                        <p>+451 (236) 2981</p>
+                    </div>
+                </div>
+
+                <div class="informacion">
+                    <div class="icono_info">
+                        <i class="fa-regular fa-envelope-open"></i>
+                    </div>
+                    <div class="dato_info">
+                        <p>info@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="h_iconos">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+            </div>
+        </div>
+    </header>
+    
+    
+    <section class="menu">
+        <div class="h_menu ancho margen">
+            <figure class="logo">
+                <img src="images/logo-white.png" alt="">
+            </figure>
+
+            <div class="menu_escritorio">
+                <nav class="menu_nav">
+                    <div class="menu_movil" id="abrir_menu">
+                        <i class="fa-solid fa-bars"></i> 
+                    </div>
+                    <ul class="menu_lista">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Feature</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="buscar">
+                    <a href="#" class="btn_buscar"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <div class="suscribete">
+                    <a href="#" class="btn_suscribirte">Submit Listing</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="menu_responsive" id="menu_responsive">
+        <div class="cerrar_menu" id="cerrar_menu">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul class="menu_responsive_lista">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Feature</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+    </section>
+
+    <section class="services">
+        <div class="ancho margen ">
+            <header class="conte_titulo_seccion">
+                <div class="naranja"></div>
+                <div class="titulo">
+                    <h3 class="wow animate__animated animate__fadeInLeft">Our Service</h3>
+                </div>
+            </header>
+            <div class="conte_services">
+                <div class="titulo_conte">
+                    <h2>We are interested for you</h2>
+                </div>
+                <div class="info_conte">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Nam perspiciatis animi nulla beatae reprehenderit et.
+                        Dignissimos et soluta maxime harum obcaecati dolorum
+                        libero porro? Ex velit vel quo iste, veritatis voluptatem in.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="carousel" class="section wow animate__animated animate__fadeInDown">
+        <div id="slide-container">
+            <article class="slide" data-slideIndex="0">
+                <figure>
+                    <img src="images/foto1.jpg" alt="">
+                </figure>
+                <h1>Sold A Home Property</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Veniam numquam illo esse?    
+                </p>
+                <a href="#">READ MORE</a>
+            </article>
+
+            <article class="slide" data-slideIndex="1">
+                <figure>
+                    <img src="images/foto2.jpg" alt="">
+                </figure>
+                <h1>Home Service and Sold</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Veniam numquam illo esse?    
+                </p>                
+                <a href="#">READ MORE</a>
+            </article>
+
+            <article class="slide" data-slideIndex="2">
+                <figure>
+                    <img src="images/foto3.jpg" alt="">
+                </figure>
+                <h1>Home Sold And Design</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Veniam numquam illo esse?    
+                </p> 
+                <a href="#">READ MORE</a>
+            </article>
+
+            <article class="slide" data-slideIndex="3">
+                <figure>
+                    <img src="images/foto4.jpg" alt="">
+                </figure>
+                <h1>Sold A Home Property</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Veniam numquam illo esse?    
+                </p> 
+                <a href="#">READ MORE</a>
+            </article>
+
+            <article class="slide" data-slideIndex="4">
+                <figure>
+                    <img src="images/foto5.jpg" alt="">
+                </figure>
+                <h1>Home Service and Sold</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Veniam numquam illo esse?    
+                </p> 
+                <a href="#">READ MORE</a>
+            </article>
+            <article class="slide" data-slideIndex="5">
+                <figure>
+                    <img src="images/foto6.jpg" alt="">
+                </figure>
+                <h1>Home Sold And Design</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Veniam numquam illo esse?    
+                </p> 
+                <a href="#">READ MORE</a>
+            </article>
+        </div>
+
+        <div class="slide-buttons">
+            <a href="#" id="back-button" class="arrow">
+                <i class="fa-solid fa-circle-chevron-left"></i>
+            </a>
+            <a href="#" id="forward-button" class="arrow">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+            </a>
+        </div>
+
+        <div class="slide-indicators">
+            <a href="#" class="slide-indicator active"></a>
+            <a href="#" class="slide-indicator"></a>
+            <a href="#" class="slide-indicator"></a>
+            <a href="#" class="slide-indicator"></a>
+            <a href="#" class="slide-indicator"></a>
+            <a href="#" class="slide-indicator"></a>
+        </div>
+
+    </section>
+
+
+    <script src="js/funciones.js"></script>
+    <script src="js/carrousel.js"></script>
+
+
+
+
+
+</body>
+</html>

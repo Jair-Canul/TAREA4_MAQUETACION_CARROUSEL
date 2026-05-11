@@ -1,0 +1,127 @@
+:root {
+    --negro: #050505;
+    --naranja: #ff7500;
+
+}
+
+@media (max-width: 480px) {
+    .h_principal {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .h_info {
+        flex-direction: row;
+        gap: 10px;
+    }
+    .informacion {
+        gap: 8px;
+        align-items: center;
+    }
+    .h_iconos {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+    .menu {
+        background-color: #6d6d6d;
+    }
+    .logo {
+        width: 50%;
+    }
+    .menu_escritorio {
+        width: 10%;
+    }
+    .menu_movil {
+        display: block;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .buscar {
+        display: none;
+    }
+    .suscribete {
+        display: none;
+    }
+    .menu_responsive {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 75%;
+        height: 100vh;
+        background-color: #333;
+        z-index: 10;
+        padding: 40px;
+        transition: all 0.5s ease;
+    }
+    .menu_responsive.abrir {
+        left: 0;
+    }
+    .cerrar_menu {
+        text-align: right;
+        margin-bottom: 40px;
+    }
+    .cerrar_menu i {
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+    }
+    .menu_responsive_lista {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .menu_responsive_lista a {
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        transition: all 0.5s ease;
+    }
+    .menu_responsive_lista a:hover {
+        color: var(--naranja);
+    }
+    .menu_lista {
+        display: none;
+    }
+    .conte_services {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .titulo_conte {
+        width: 100%;
+    }
+    .info_conte {
+        width: 100%;
+        padding-left: 6px;
+    }
+    #carousel {
+        margin-top: 40px;
+    }
+    .slide {
+        min-width: 100%;
+    }
+    .slide figure {
+        height: 220px;
+    }
+    .slide h1 {
+        font-size: 22px;
+        line-height: 30px;
+        padding: 0px 15px;
+    }
+    .slide p {
+        font-size: 15px;
+        padding: 0px 20px;
+    }
+    .slide-buttons {
+        display: none;
+    }
+    .slide-indicators {
+        margin-top: 20px;
+    }
+    .btn_scroll {
+        right: 10px;
+    }
+}
